@@ -1,0 +1,82 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.navbar-default {
+  background-color: #4db8ce;
+  height: 45px;
+}
+.align{
+  display: inline-block;
+  text-align: center;
+}
+.pull-right{
+  height:45px;
+}
+.navbar-center{
+  text-align: center;
+  height: 45px;
+
+  vertical-align: middle;
+
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.box{
+  margin-top: 50px;
+}
+.form-control{
+
+  height: 30px;
+}
+.btn{
+
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #1da1f2;
+  color: white;
+}
+.modal-title{
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #8899a6;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.login-box{
+  margin-top: 40px;
+}
+
+.login-title{
+  padding: 10px;
+}
+.login-button{
+  text-align: center;
+
+}
+.modal-footer {
+  text-align: center;
+}
+.text-input{
+  margin-top: 10px;
+  background-color: rgb(250, 255, 189);
+
+}
+img.logo{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+a {
+  color: #00B7FF;
+}

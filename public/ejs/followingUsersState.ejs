@@ -1,0 +1,62 @@
+<div class="container-fluid" style="background-color:white;margin-top: -10px;margin-bottom: 10px;height: 200px;padding: 0px ">
+    <div class="container-fluid" style="background-color:deepskyblue;margin-top: -10px;height: 160px;padding: 0px ">
+        <div class="image">
+            <img src="/images/logo.png" class="img-responsive" style="margin-top: 130px;margin-left: 60px;background-color: white" alt="logo" width="140" height="140">
+        </div>
+    </div>
+    <div class="col-sm-offset-3">
+        <div class="col-sm-7 twPc-divStats">
+            <ul class="twPc-Arrange">
+                <li class="twPc-ArrangeSizeFit">
+                    <a ui-sref="app">
+                        <span class="twPc-StatLabel twPc-block">Tweets</span>
+                        <span class="twPc-StatValue">{{tweetCount}}</span>
+                    </a>
+                </li>
+                <li class="twPc-ArrangeSizeFit">
+                    <a ui-sref="#">
+                        <span class="twPc-StatLabel twPc-block">Following</span>
+                        <span class="twPc-StatValue">{{followingCount}}</span>
+                    </a>
+                </li>
+                <li class="twPc-ArrangeSizeFit">
+                    <a ui-sref="app.followersUsersState">
+                        <span class="twPc-StatLabel twPc-block">Followers</span>
+                        <span class="twPc-StatValue">{{followersCount}}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+
+    </div>
+    <div ng-init="getFollowingUsers()" class="container-fluid  col-sm-offset-3" >
+
+            <div ng-repeat="user in data">
+                <div class="twPc-div col-sm-5 " style="margin: 15px;">
+                    <a class="twPc-bg twPc-block"></a>
+
+                    <div>
+                        <a href="#" class="twPc-avatarLink">
+                            <img alt="Mert Salih Kaplan" src="/images/logo.png" style="background-color: black" class="twPc-avatarImg">
+                        </a>
+
+                        <div class="twPc-divUser">
+                            <div class="twPc-divName">
+                                {{user.fullname}}
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+</div>

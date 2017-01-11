@@ -1,0 +1,74 @@
+<div class="container-fluid" style="background-color:white;margin-top: -10px;margin-bottom: 10px;height: 200px;padding: 0px ">
+    <div class="container-fluid" style="background-color:deepskyblue;margin-top: -10px;height: 160px;padding: 0px ">
+        <div class="image">
+            <img src="/images/logo.png" class="img-responsive" style="margin-top: 130px;margin-left: 60px;background-color: white" alt="logo" width="140" height="140">
+        </div>
+    </div>
+    <div class="col-sm-offset-3">
+        <div class="col-sm-7 twPc-divStats">
+            <ul class="twPc-Arrange">
+                <li class="twPc-ArrangeSizeFit">
+                    <a ui-sref="app">
+                        <span class="twPc-StatLabel twPc-block">Tweets</span>
+                        <span class="twPc-StatValue">{{tweetCount}}</span>
+                    </a>
+                </li>
+                <li class="twPc-ArrangeSizeFit">
+                    <a ui-sref="#">
+                        <span class="twPc-StatLabel twPc-block">Following</span>
+                        <span class="twPc-StatValue">{{followingCount}}</span>
+                    </a>
+                </li>
+                <li class="twPc-ArrangeSizeFit">
+                    <a ui-sref="app.followersUsersState">
+                        <span class="twPc-StatLabel twPc-block">Followers</span>
+                        <span class="twPc-StatValue">{{followersCount}}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid col-sm-8 col-sm-offset-2" style="margin-top: 30px" ng-init="getProfile()" >
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">Fullname</label>
+        <div class="col-xs-10">
+            <input class="form-control" type="text" value="Artisanal kale" id="example-text-input" ng-model="fullname">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">twitterhandle</label>
+        <div class="col-xs-10">
+            <input class="form-control" type="text" value="Artisanal kale" id="example-text-input" ng-model="twitterHandle">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">Birthday</label>
+        <div class="col-xs-10">
+            <input class="form-control" type="date" value="Artisanal kale" id="example-text-input" ng-model="birthday">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">gender</label>
+        <div class="col-xs-10">
+            <div class="radio">
+                <input type="radio" class="form-check-input" ng-model="gender" value="Male"><label>Male</label>
+            </div>
+            <div class="radio">
+                <input type="radio" class="form-check-input" ng-model="gender" value="Female"><label>Female</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">Mobile</label>
+        <div class="col-xs-10">
+            <input class="form-control" type="tel" value="Artisanal kale" id="example-text-input" ng-model="mobile">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-6 col-form-label"></label>
+        <div class="col-xs-2">
+            <button class="form-control" type="submit" style="background-color: #00bfff;color: white;border: none" ng-click="updateProfile()">Update</button>
+        </div>
+    </div>
+</div>

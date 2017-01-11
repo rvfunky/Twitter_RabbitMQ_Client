@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="col-sm-4 col-sm-offset-4" style="padding: 0px">
+        <h1>
+            Join Twitter today.
+        </h1>
+        <div class="signup-form ">
+            <form role="form" ng-submit="signup()">
+                <div class="form-group " style="margin-bottom: 20px; margin-top: 15px">
+                    <input type="text" class="form-control text-input" placeholder="Fullname" ng-model="fullname" required>
+                </div>
+                <div class="form-group " style="margin-bottom: 20px">
+                    <input type="text" class="form-control text-input" placeholder="Email" ng-model="email" required>
+                </div>
+                <div class="form-group " style="margin-bottom: 20px">
+                    <input type="password" class="form-control text-input" placeholder="Password" ng-model="password" required>
+                </div>
+                <div class="login-button" style="margin-bottom: 20px">
+                    <button type="submit" class=" btn btn-default ">Sign up</button>
+                </div>
+                <div class="form-group" >
+                    <p class="taken error active" role="alert" style="color:red"     ng-show="error">
+                        This email is already registered.
+                        </p>
+                </div>
+                <div class="form-group" >
+                    <p class="taken error active" role="alert"     ng-show="success">
+                        signed up successfully.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
